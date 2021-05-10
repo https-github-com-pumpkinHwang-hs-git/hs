@@ -26,7 +26,7 @@
 		<div class="navbar-header"> 	<!-- 네비게이션 상단 부분 -->
 			<!-- 네비게이션 상단 박스 영역 -->
 			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="javascript:bs-example-navbar-collapse-1"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
 				aria-expanded="false">
 				<!-- 이 삼줄 버튼은 화면이 좁아지면 우측에 나타난다 -->
 				<span class="icon-bar"></span>
@@ -58,6 +58,32 @@
 			</ul>
 		</div>
 	</nav>
+	<!-- 게시판 메인 페이지 영역 시작 -->
+	<div class="container">
+		<div class="row">
+			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+				<thead>
+					<tr>
+						<th style="background-color: #eeeeee; text-align: center;">번호</th>
+						<th style="background-color: #eeeeee; text-align: center;">제목</th>
+						<th style="background-color: #eeeeee; text-align: center;">작성자</th>
+						<th style="background-color: #eeeeee; text-align: center;">작성일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<!-- 테스트 코드 -->
+						<td>1</td>
+						<td>안녕하세요</td>
+						<td>홍길동</td>
+						<td>2020-07-13</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- 글쓰기 버튼 생성 -->
+			<a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
+		</div>
+	</div>
 	<!-- 부트스트랩 참조 영역 -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="/resources/js/bootstrap.js"></script>
